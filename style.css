@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+.card:nth-child(1){ border-radius: 10px 10px 0 0;
+}
+.card:nth-child(3){ border-radius: 0 0 10px 10px;
+}
+
+.card.orange{
+    background-color: var(--bright-orange);
+}
+.card.cyan{
+    background-color: var(--dark-cyan);
+}
+.card.green{
+    background-color: var(--very-dark-cyan);
+}
+
+.card__icon{
+    margin-bottom: 30px;
+   
+}
+.card__title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+   
+}
+
+.card__text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 50px;
+}
+.card__button{
+    cursor: pointer;
+    width: 146px;
+    height:48px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    
+}
+.card__button:hover{
+    border: none;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px; 
+}
+
+.card__button.orange{
+    color: var(--bright-orange);
+}
+.card__button.cyan{
+    color: var(--dark-cyan);
+}
+.card__button.green{
+    color: var(--very-dark-cyan);
+}
+.card__button.orange:hover, .cyan:hover, .green:hover{
+    color: white;
+    
+}
+@media screen and (min-width:810px){
+    .container{flex-direction: row;}
+    .card:nth-child(1){ border-radius: 10px 0 0 10px;
+    }
+    .card:nth-child(3){ border-radius: 0 10px 10px 0;
+    }
+}
