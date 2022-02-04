@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://skarlos134.github.io/3-column-preview-card-component-main/)
+- Live Site URL: [Add live site URL here](https://skarlos134.github.io/3-column-preview-card-component-main/)
 
 ## My process
 first analyze the design structure before start grating a card template the lasty step was create styles for each color 
